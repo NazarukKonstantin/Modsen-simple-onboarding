@@ -21,15 +21,15 @@ import androidx.compose.ui.unit.dp
 fun IndicatorUI(
     pageSize: Int,
     currentPage: Int,
-    selectedColor: Color = MaterialTheme.colorScheme.secondary,
-    unselectedColor: Color = MaterialTheme.colorScheme.secondaryContainer
+    selectedColor: Color = MaterialTheme.colorScheme.onBackground,
+    unselectedColor: Color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.4f)
 ) {
     Row(horizontalArrangement = Arrangement.SpaceBetween) {
         repeat(pageSize) {
             Spacer(modifier = Modifier.size(2.5.dp))
             Box(
                 modifier = Modifier
-                    .height(14.dp)
+                    .height(10.dp)
                     .width(width = if (it == currentPage) 36.dp else 14.dp)
                     .clip(RoundedCornerShape(18.dp))
                     .background(color = if (it == currentPage) selectedColor else unselectedColor)

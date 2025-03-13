@@ -15,19 +15,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 @Composable
 fun OnboardingUI(onboardingModel: OnboardingModel) {
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(Modifier.size(35.dp))
+        Spacer(Modifier.size(60.dp))
         Text(
             text = onboardingModel.title,
             style = MaterialTheme.typography.displayLarge,
             color = MaterialTheme.colorScheme.onBackground,
-            fontSize = 16.sp,
-            modifier = Modifier.fillMaxWidth().padding(30.dp,0.dp),
-
+            modifier = Modifier.fillMaxWidth().padding(30.dp,0.dp)
             )
         Spacer(
             modifier = Modifier
@@ -36,19 +33,14 @@ fun OnboardingUI(onboardingModel: OnboardingModel) {
         Text(
             text = onboardingModel.description,
             style = MaterialTheme.typography.displayMedium,
-            color = MaterialTheme.colorScheme.onSurface,
-            fontSize = 16.sp,
-            modifier = Modifier.fillMaxWidth().padding(10.dp,0.dp)
-        )
-        Spacer(
-            modifier = Modifier
-                .size(25.dp)
+            color = MaterialTheme.colorScheme.onBackground,
+            modifier = Modifier.fillMaxWidth().padding(30.dp,0.dp,40.dp,0.dp)
         )
         Image(
             painter = painterResource(id = onboardingModel.image),
             contentDescription = null,
             modifier = Modifier
-                .fillMaxWidth()
+                .fillMaxSize()
                 .padding( 0.dp),
             alignment = Alignment.Center
         )
