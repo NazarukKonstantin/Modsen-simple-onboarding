@@ -1,7 +1,6 @@
 package com.example.onboarding.ui.theme
 
 import androidx.compose.material3.Typography
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -39,28 +38,28 @@ val Typography = Typography(
     ),
     displayLarge = TextStyle(
         fontFamily = sf_pro_text,
-        fontWeight = FontWeight.Bold,
-        fontSize = 16.sp,
-        lineHeight = 18.sp,
-        textAlign = TextAlign.Start,
-        color = Color.Red
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 24.sp,
+        lineHeight = 32.sp,
+        textAlign = TextAlign.Start
     ),
     displayMedium = TextStyle(
         fontFamily = sf_pro,
         fontWeight = FontWeight.Normal,
-        fontSize = 6.sp,
-        lineHeight = 8.sp,
+        fontSize = 22.sp,
+        lineHeight = 30.sp,
     ),
     titleMedium = TextStyle(
         fontFamily = abel,
-        fontWeight = FontWeight.Normal,
-        fontSize = 6.sp,
-        lineHeight = 8.sp,
+        fontWeight = FontWeight.Medium,
+        fontSize = 20.sp,
+        lineHeight = 24.sp,
     ),
     headlineLarge = TextStyle(
         fontFamily = anek_malayalam,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 18.sp,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 24.sp,
+        lineHeight = 32.sp,
+//        color = Color.White
     )
 )
